@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GRS Books</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Header Styling */
+.header {
+    background-color: #f9f7f7;
+    padding: 15px;
+}
+
+.header h1 {
+    color: #fff;
+    display: inline;
+}
+
+.header ul {
+    list-style-type: none;
+    display: inline;
+    float: right;
+}
+
+.header ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header ul li a:hover {
+    color: #FFDD67;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    background-color: #d39e0e;
+    color: #333;
+}
+
+.contact-section h2 {
+    font-size: 2.2em;
+    color: #2E3A59;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1em;
+    color: #2E3A59;
+}
+
+.contact-form {
+    background-color: #FFF8EC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+}
+
+.contact-form .btn-warning {
+    background-color: #FC9E4F;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-form .btn-warning:hover {
+    background-color: #FFDD67;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2E3A59;
+    color: #fff;
+    margin-top: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.branding h1 {
+    margin-left: 10px; /* Space between logo and text */
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header nav ul li {
+    margin-right: 15px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #f7eeee;
+    font-weight: 500;
+}
+
+.header nav ul li a:hover {
+    color: #007bff; /* Bootstrap primary color for hover effect */
+}
+
+</style>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "piIPtKlv2eoaDMa7_",
+      });
+   })();
+</script>
+
+<script  src = "script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="branding">
+            <img src="IMG-20241027-WA0004.jpg" alt="Logo" style="height: 50px; width: 50px;">
+            <h1 style="color: #f7eeee;">GRS BOOKS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a> | </li>
+                <li><a href="products.html">Products</a> | </li>
+                <li><a href="about.html">About</a> | </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+
+    <!-- Contact Section -->
+    <div class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center">Get in Touch</h2>
+            <p class="text-center">We would love to hear from you! Feel free to reach out with any questions or feedback.</p>
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-lg-5 mb-4">
+                    <h4>Contact Information</h4>
+                    <p><strong>Phone:</strong> 6381363440</p>
+                    <p><strong>Email:</strong> gopi272006@gmail.com</p>
+                    <p><strong>Address:</strong> Namakkal</p>
+                    <p>Follow us on social media for updates:</p>
+                    <a href="https://www.linkedin.com/in/gopi-g-5a765830a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color: whitesmoke">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    
+                    <a href="https://gopirgs.github.io/BOOKSKY-APP-OPTIMIZSED-APP-CODE-/booksky.html" style="color: whitesmoke">
+                        <i class="fas fa-sticky-note"></i> Strictly Notes
+                    </a>
+                    
+                    <a href="https://www.instagram.com/gopi_g66/profilecard/?igsh=MXI1OGR0eWltYjNkaA==" style = "color : whitesmoke">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                    
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <form action="submit_contact.php" method="post" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">PROBLEM DETAILS...</label>
+                            <textarea class="form-control" id="subject" name="subject" rows="4" required></textarea>
+                        </div>
+                       <div class="form-group">
+                            <label for="message" style="color :#0ed350">If you can avoid entering any information in the reason box then only your contact request is valid
+                                else it's we will considered invaild contact request... IF VALID MEANS... ->> DO NOT WRITE HERE...                             
+                            </label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-block"  onclick="sendMail()">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 GRS Books. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
